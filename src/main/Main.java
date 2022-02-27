@@ -34,6 +34,7 @@ public class Main {
                 System.out.println("\nIngresa valor a encolar");
                 int value = read.nextInt();
                 arrayQueue.enqueue(value);
+                System.out.println("\nElemento encolado...");
                 arrayQueueMenu();
                 break;
             case 2:
@@ -45,7 +46,7 @@ public class Main {
                 arrayQueueMenu();
                 break;
             case 4:
-                System.out.println("\nEl tamaño de la cola: "+arrayQueue.size());
+                System.out.println("\nTamaño de la cola: "+arrayQueue.size());
                 arrayQueueMenu();
                 break;
             case 5:
@@ -61,15 +62,22 @@ public class Main {
 
         switch (opc){
             case 1:
+                System.out.println("\nIngresa valor a encolar");
+                int value = read.nextInt();
+                listQueue.enqueue(value);
+                System.out.println("\nElemento encolado...");
                 linkedListQueueMenu();
                 break;
             case 2:
+                System.out.println("\nElemento: "+listQueue.dequeue()+" Desencolado...");
                 linkedListQueueMenu();
                 break;
             case 3:
+                System.out.println("\nCima: "+listQueue.peek());
                 linkedListQueueMenu();
                 break;
             case 4:
+                System.out.println("\nTamaño de la cola: "+listQueue.size());
                 linkedListQueueMenu();
                 break;
             case 5:
